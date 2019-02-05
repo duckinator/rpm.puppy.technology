@@ -1,1 +1,2 @@
-/repo-rpm/x86_64
+/repo-rpm/noarch
+/repo-rpm/*.rpm
