@@ -1,0 +1,3 @@
+[puppy-technology]
+name = Puppy Technology
+baseurl = https://rpm.puppy.technology/fedora/$releasever/$basearch/
