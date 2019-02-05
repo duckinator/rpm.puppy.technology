@@ -22,6 +22,12 @@ pip_rpm: dirs
 gem_rpm: dirs
 	cd ${FEDORA_X86_64_DIR} && fpm -s gem -t rpm ${PACKAGE}
 
+
+repo-rpm:
+	cp repo/puppy-technology.repo puppy-technology-rpm/files/etc/yum.repos.d/puppy-technology.repo
+	cd puppy-technology-rpm && fedpkg --release f29 local
+	cd puppy-technology-rpm && fedpkg --release f29 lint
+
 dirs:
 	mkdir -p ${FEDORA_X86_64_DIR}
 
