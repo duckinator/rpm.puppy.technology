@@ -13,7 +13,7 @@ Adds various files needed by the puppy.technology repository.
 
 %install
 mkdir -p %{buildroot}/etc/yum.repos.d/
-install -p -m 755 %{SOURCE0}/etc/yum.repos.d/puppy-technology.repo %{buildroot}/etc/yum.repods.d/
+install -p -m 755 %{SOURCE0}/etc/yum.repos.d/puppy-technology.repo %{buildroot}/etc/yum.repos.d/
 
 
 %check
