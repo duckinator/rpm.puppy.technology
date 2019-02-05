@@ -9,9 +9,9 @@ all:
 # Usage: make update-metadata REPODIR=<repo dir>
 update-metadata:
 	test -n "${REPODIR}"
-	cd ${REPODIR} && createrepo --update .
+	createrepo --update ${REPODIR}
 	# TODO: Figure out GPG stuff?
-	#gpg --detach-sign --armor repodata/repomd.xml <Paste>
+	#gpg --detach-sign --armor repodata/repomd.xml
 
 # Usage: make pip_rpm PACKAGE=<pypi package name>
 pip_rpm: dirs
