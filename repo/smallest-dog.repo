@@ -1,0 +1,3 @@
+[smallest-dog]
+name = Smallest Dog Software
+baseurl = https://repo.smallest.dog/fedora/$releasever/$basearch/
