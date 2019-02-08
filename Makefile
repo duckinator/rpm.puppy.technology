@@ -5,6 +5,7 @@ FEDORA_X86_64_DIR := repo/fedora/29/x86_64/
 all:
 	$(MAKE) pip_rpm PACKAGE=emanate ARGS='--name emanate'
 	#$(MAKE) gem_rpm PACKAGE=how_is
+	$(MAKE) package PACKAGE=solvespace
 
 # Usage: make update-metadata REPODIR=<repo dir>
 update-metadata:
@@ -12,6 +13,10 @@ update-metadata:
 	createrepo --update ${REPODIR}
 	# TODO: Figure out GPG stuff?
 	#gpg --detach-sign --armor repodata/repomd.xml
+
+package: dirs
+	$(MAKE) -C packages -C "${PACKAGE}"
+	$(MAKE) update-metadata REPODIR=${FEDORA_X86_64_DIR}
 
 # Usage: make pip_rpm PACKAGE=<pypi package name>
 pip_rpm: dirs

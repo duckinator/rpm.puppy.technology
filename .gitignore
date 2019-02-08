@@ -1,2 +1,6 @@
-/packages/*/noarch
+/packages/*/noarch/
+/packages/*/x86_64/
 /packages/*/*.rpm
+/packages/*/*.tar.gz
+/packages/solvespace/solvespace-solvespace-*/
+*.log
