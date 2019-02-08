@@ -1,2 +1,2 @@
-/repo-rpm/noarch
-/repo-rpm/*.rpm
+/packages/*/noarch
+/packages/*/*.rpm
