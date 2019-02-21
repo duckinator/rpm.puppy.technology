@@ -31,7 +31,4 @@ repo-rpm:
 dirs:
 	mkdir -p ${FEDORA_X86_64_DIR}
 
-clean:
-	rm -f repo/fedora/*/*/*.rpm
-
-.PHONY: all clean dirs pip_rpm
+.PHONY: all dirs pip_rpm
