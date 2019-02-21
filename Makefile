@@ -3,7 +3,14 @@ FEDORA_X86_64_DIR := repo/fedora/29/x86_64/
 # http://yum.baseurl.org/wiki/RepoCreate.html
 
 all:
+	@echo "Usage: make <PACKAGE NAME>"
+	@echo
+	@echo "Known packages: emanate, solvespace"
+
+emanate:
 	$(MAKE) pip_rpm PACKAGE=emanate ARGS='--name emanate'
+
+solvespace:
 	$(MAKE) package PACKAGE=solvespace
 
 # Usage: make update-metadata REPODIR=<repo dir>
