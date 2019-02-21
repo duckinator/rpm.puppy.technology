@@ -1,6 +1,6 @@
-%global commit 8f2af5b228366f2b5f4bce982a92f38e74b4b0cd
+%global commit 9d1601eea9039011c16c435b26a680fb4bc35c34
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global gitdate 20181109
+%global gitdate 20190219
 
 %global libdxfrw_commit 03fa5f30f1a1db7231a25653c9dd38044fe06640
 %global libdxfrw_shortcommit %(c=%{libdxfrw_commit}; echo ${c:0:7})
@@ -107,8 +107,11 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_includedir}/slvs.h
 
 %changelog
+* Wed Feb 20 2019 Ellen Dash - 3.0-1.20190219git9d1601e
+- Update to latest master
+
 * Thu Jan 10 2019 Tavy - 3.0-1.20181109git8f2af5b
-- update to more recent solvespace
+- Update to more recent solvespace
 
 * Sun May 13 2018 Dominik Schubert - 2.3-3.20170416gitb1d87bf
 - Rebuild for Fedora 28
