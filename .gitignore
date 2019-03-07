@@ -2,5 +2,6 @@
 /packages/*/x86_64/
 /packages/*/*.rpm
 /packages/*/*.tar.gz
+/packages/emanate/emanate-*/
 /packages/solvespace/solvespace-solvespace-*/
 *.log
