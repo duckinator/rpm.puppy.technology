@@ -1,7 +1,7 @@
 %global srcname emanate
 
 Name:           %{srcname}
-Version:        6.0.0
+Version:        6.0.1
 Release:        0%{?dist}
 Summary:        Symlinks files from one directory to another, useful for managing dotfiles
 
@@ -41,9 +41,12 @@ Useful for managing your dotfiles.
 %{_bindir}/emanate
 
 %changelog
+* Sun Mar 17 2019 Ellen Dash - 6.0.1-0
+- Update to 6.0.1
+
 * Sun Mar 17 2019 Ellen Dash - 6.0.0-0
 - Update to 6.0.0
-- I forgot to add changelog entries for 5.0.x, whoops.
+- I forgot to add changelog entries for 5.0.x, whoops
 
 * Wed Mar 06 2019 Ellen Dash - 5.0.0-3
 - Initial packaging
