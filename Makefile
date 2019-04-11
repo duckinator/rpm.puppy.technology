@@ -5,13 +5,16 @@ FEDORA_X86_64_DIR := repo/fedora/29/x86_64/
 all:
 	@echo "Usage: make <PACKAGE NAME>"
 	@echo
-	@echo "Known packages: emanate, solvespace"
+	@echo "Known packages: emanate, solvespace, trufont"
 
 emanate:
 	$(MAKE) package PACKAGE=emanate
 
 solvespace:
 	$(MAKE) package PACKAGE=solvespace
+
+trufont:
+	$(MAKE) package PACKAGE=trufont
 
 # Usage: make update-metadata REPODIR=<repo dir>
 update-metadata:
